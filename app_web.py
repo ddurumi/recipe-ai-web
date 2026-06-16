@@ -5,7 +5,7 @@ import google.generativeai as genai
 st.set_page_config(page_title="냉파 AI 셰프", page_icon="🍳", layout="centered")
 
 # 2. Gemini API 키 설정 (본인의 키를 넣어주세요)
-GOOGLE_API_KEY = "AQ.Ab8RN6KCltADlfTmsUIA0pNWnBRsmjeWFqlvENohDcO_dKMr-g"
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # 3. 메인 타이틀 및 헤더 (상단 영역)
